@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+    <script src="script.js" defer></script>
+
+</head>
+<div class="content">
+	
+			<section class="main-content">
+                <form id="cart-shop">
+                <div class="item">
+                    <h2>Glasses</h2>
+                    
+        
+                    <div class="info">
+                    <span>Price: $120/pair</span>
+                    </div>
+        
+                    <div class="order">
+                    <label for="field-q-glasses">Select quantity:</label>
+                    <input type="number" min="0" id="field-q-glasses" size="3" placeholder="0">
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <h2>Tops</h2>
+                   
+        
+                    <div class="info">
+                    <span>Price: $25/each</span>
+                    </div>
+        
+                    <div class="order">
+                    <label for="field-q-tops">Select quantity:</label>
+                    <input type="number" min="0" id="field-q-tops" size="3" placeholder="0">
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <h2>Shoes</h2>
+                   
+        
+                    <div class="info">
+                    <span>Price: $30/pair</span>
+                    </div>
+        
+                    <div class="order">
+                    <label for="field-q-shoes">Select quantity:</label>
+                    <input type="number" min="0" id="field-q-shoes" size="3" placeholder="0">
+                    </div>
+                    
+                </div>
+    
+                <div id="summary">
+                    <h2>Estimate Order</h2>
+                    
+                    <div class="state">
+                        <label for="s-state">State (required):</label>
+                        <select id="s-state">
+                            <option value="">- select -</option>
+                            <option value="CA">California (7.5% tax)</option>
+                            <option value="WA">Seattle (6.5% tax)</option>
+                            <option value="NY">NYC</option>
+                           
+                        </select>
+                    </div>
+        
+                    <div class="method">
+                        <label for="r-method-pickup">Shipping and Handling:</label><br>
+                        <input type="radio" value="pickup" name="r_method" id="r-method-pickup" checked> <label for="r-method-pickup">Pickup (free)</label><br>
+            
+                        <input type="radio" value="usps" name="r_method" id="r-method-usps"> <label for="r-method-usps">US Mail ($2/item)</label><br>
+            
+                        <input type="radio" value="ups" name="r_method" id="r-method-ups"> <label for="r-method-ups">UPS ($3/item)</label>
+                    </div>
+        
+                
+                    
+        
+                    <div class="group calc">
+                        <p>
+                        <label for="btn-estimate">Estimate Order:</label><br>
+                        <input type="submit" value="Estimate Total" id="btn-estimate">
+                        <input type="text" id="txt-estimate" placeholder="$0.00">
+                        </p>
+            
+                    </div>
+                </div>
+        
+                </form>
+			</section>
+<!-- /post -->
+
+</div>
+<!-- /content -->
+
+</body>
+</html>
